@@ -9,10 +9,10 @@ x = int(input('Input "X": '))
 y = int(input('Input "Y": '))
 
 if x > 0 and y > 0:
-    print('Quarter Nord-East')
+    print("Quarter Nord-East")
 elif x < 0 and y < 0:
-    print('Quarter South-West')
+    print("Quarter South-West")
 elif x < 0 and y > 0:
-    print('Quarter Nord-West')
+    print("Quarter Nord-West")
 else:
-    print('Quarter South-East')
+    print("Quarter South-East")

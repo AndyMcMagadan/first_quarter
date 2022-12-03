@@ -6,9 +6,9 @@
 # - 1 -> нет
 
 weekends = [6, 7]
-day_for_checkit = int(input('Введите день недели: '))
+day_for_checkit = int(input("Введите день недели: "))
 if day_for_checkit > 7 or day_for_checkit <= 0:
-    print('This number is a mistake in weekdays!')
+    print("This number is a mistake in weekdays!")
 elif day_for_checkit in weekends:
     print("Yes, it's weekend.")
 else:

@@ -19,5 +19,5 @@ y1 = int(input('Input "Y1": '))
 x2 = int(input('Input "X2": '))
 y2 = int(input('Input "Y2": '))
 
-z = round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 4)
+z = round(math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2), 4)
 print(z)
