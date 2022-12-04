@@ -35,4 +35,4 @@ if number_1 > len(new_list):
 elif number_2 > len(new_list):
     print("There are no values for these indexes!")
 else:
-    print(new_list[number_1] * new_list[number_2])
+    print(new_list[number_1 - 1] * new_list[number_2 - 1])
