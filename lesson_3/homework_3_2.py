@@ -21,11 +21,13 @@ def list_create(mount):
 
 def multi_elem(my_list):
     multi_list = []
-    for key in range(1, int((len(my_list) + 3) / 2)):
-        if (key) < (len(my_list) - key):
-            multi_list.append(my_list[(key - 1)] * my_list[(len(my_list) - key)])
-        else:
-            multi_list.append(my_list[key - 1])
+    len_list = len(my_list)
+
+    for key in range(len_list // 2):
+        multi_list.append(my_list[key] * (my_list[len_list - key - 1]))
+
+    if len_list % 2:
+        multi_list.append(my_list[len_list // 2])
     return multi_list
 
 
