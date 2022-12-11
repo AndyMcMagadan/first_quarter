@@ -13,13 +13,11 @@
 def dec_in_bin(my_number):
     bin_list = []
     while my_number:
-        bin_list.append(int(my_number % 2))
+        bin_list.insert(0, int(my_number % 2))
         my_number //= 2
     return bin_list
 
 
-user_number = int(input("Ввведите число: "))
+user_number = dec_in_bin(int(input("Ввведите число: ")))
 
-bin_view = [str(i) for i in dec_in_bin(user_number)]
-bin_view.reverse()
-print("".join(bin_view))
+print(*user_number, sep='')
