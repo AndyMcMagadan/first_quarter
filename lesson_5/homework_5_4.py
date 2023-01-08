@@ -6,8 +6,8 @@
 # Добавьте игру против бота
 # Подумайте как наделить бота "интеллектом"
 
-count_of_candies = 2021
-gamer_1, gamer_2 = input('Введите имя 1 игрока: '), 'Myghty bot'
+count_of_candies = int(input('Enter amount of candies: '))
+gamer_1, gamer_2 = input('Введите имя игрока: '), 'Myghty bot'
 current_gamer = gamer_1
 print(f'Количество оставшихся конфет: {count_of_candies}')
 while count_of_candies > 0:
