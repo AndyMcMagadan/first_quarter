@@ -30,8 +30,11 @@ set_key_1 = set([name.split()[1][0] for name in name_list])
 user_list = [[name.split()[1][0], name.split()[0][0], name]
              for name in name_list]
 
-total_dict = {}
+# Way 1
+total_dict = {key_1: gen_short_dict(key_1, user_list) for key_1 in set_key_1}
+print(f'Way 1:\n{total_dict}')
+
+# Way 2
 for key_1 in set_key_1:
     total_dict[key_1] = gen_short_dict(key_1, user_list)
-
-print(total_dict)
+print(f'Way 2:\n{total_dict}')
