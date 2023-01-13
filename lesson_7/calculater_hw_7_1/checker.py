@@ -1,5 +1,5 @@
 def check_of_num(data):
-    if data.isdigit():
-        return int(data)
+    if data.replace('.', '').isdigit():
+        return float(data)
     else:
         return f'Entered incorrectly. Try again!'
