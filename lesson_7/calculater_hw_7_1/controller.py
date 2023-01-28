@@ -1,6 +1,7 @@
 import model
 import view
 import checker
+from logger import logging
 
 
 def main_value():
@@ -20,8 +21,11 @@ def main_menu():
         elif result == 2:
             menu_complex()
         elif not result:
+            logging.info('Stop programm')
+            print('Goodbye! See You later!')
             exit()
         else:
+            logging.warning('Wrong item')
             print('One more')
 
 
