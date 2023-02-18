@@ -13,7 +13,7 @@
     box-sizing: border-box;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
-    background-color: #FFFFFF;
+    background-color: #c6afe0;
     display: flex;
     flex-direction: column;
 }
@@ -21,7 +21,6 @@
 .header {
     font-size: 36px;
     text-align: center;
-    image-orientation: from-image;
     font-weight: 300;
     color: #1F3F68;
     line-height: 74px;
@@ -32,7 +31,6 @@
 .content {
     padding-top: 115px;
     flex-grow: 1;
-    background-image: url(img/illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -65,7 +63,8 @@
 }
 
 .footer {
-    font-size: 16px;
+    padding-top: 35px;
+    font-size: 26px;
     line-height: 26px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
