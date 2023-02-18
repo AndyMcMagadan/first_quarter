@@ -7,9 +7,21 @@
     font-family: sans-serif;
 }
 
+.box {
+    width: 1280px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     font-size: 36px;
     text-align: center;
+    image-orientation: from-image;
     font-weight: 300;
     color: #1F3F68;
     line-height: 74px;
